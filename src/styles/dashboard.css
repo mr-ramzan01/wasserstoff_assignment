@@ -368,25 +368,27 @@
 
 .bubbles {
     height: 100%;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .outerBubble {
-    width: 60%;
-    height: 60%;
+    width: 550px;
+    height: 550px;
     border-radius: 50%;
     border: 20px solid rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .innerBubble {
     background: #FFFFFF;
     width: 85%;
     height: 85%;
     border-radius: 50%;
+    position: relative;
     box-shadow: 0px 100px 80px rgba(108, 73, 172, 0.07), 0px 41.7776px 33.4221px rgba(108, 73, 172, 0.0503198), 0px 22.3363px 17.869px rgba(108, 73, 172, 0.0417275), 0px 12.5216px 10.0172px rgba(108, 73, 172, 0.035), 0px 6.6501px 5.32008px rgba(108, 73, 172, 0.0282725), 0px 2.76726px 2.21381px rgba(108, 73, 172, 0.0196802);
     display: flex;
     justify-content: center;
@@ -397,6 +399,283 @@
     width: 40%;
     height: 40%;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background: radial-gradient(96% 96% at 70.4% 31.2%, #838FFF 0%, rgba(227, 230, 255, 0) 100%), #030092;
     box-shadow: 0px 40px 80px rgba(35, 0, 248, 0.24), inset 0px 2px 10px rgba(255, 255, 255, 0.58), inset 0px -20px 50px rgba(124, 161, 255, 0.37), inset 10px 16px 20px rgba(207, 163, 252, 0.95);
+}
+
+.investmentBubble h5 {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.44px;
+    color: #FFFFFF;
+}
+
+.investmentBubble h4 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.15px;
+    color: #FFFFFF;
+}
+
+.investmentBubble p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.44px;
+    color: #DDDDFF;
+}
+
+.financeBubble {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 7%;
+    left: 50%;
+    color: #FFFFFF;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
+}
+
+.businessBubble {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 40%;
+    left: 73.5%;
+    color: #FFFFFF;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
+}
+
+.designBubble {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 60%;
+    left: 9%;
+    color: #FFFFFF;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
+}
+.developmentBubble {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 22%;
+    left: 7%;
+    color: #FFFFFF;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
+}
+
+.smallBubble {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #3244E8 0%, rgba(0, 2, 16, 0) 100%) , #5551FD;
+    box-shadow: 0px 4px 80px rgba(248, 0, 119, 0.48), inset 0px 2px 10px rgba(255, 255, 255, 0.58);
+}
+.mediumBubble {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #838FFF 0%, rgba(227, 230, 255, 0) 100%), #030092;
+    box-shadow: 0px 40px 80px rgba(35, 0, 248, 0.53), inset 0px 2px 10px rgba(255, 255, 255, 0.58), inset 0px -20px 50px rgba(124, 161, 255, 0.37), inset 10px 16px 20px rgba(130, 5, 255, 0.95);
+}
+.yellowBubble {
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFB84D 0%, rgba(119, 43, 0, 0) 100%) #FF8A00;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 148, 22, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53);
+}
+.pinkBubble {
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    left: 50%;
+    top: 72%;
+    border-radius: 50%;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
+}
+.mediumBubble2 {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #6AE4FF 0%, rgba(74, 147, 255, 0) 100%), #0811E2;
+    box-shadow: inset 0px 2px 10px rgba(255, 255, 255, 0.58), inset 0px -6px 10px rgba(63, 209, 255, 0.67), inset 10px 16px 20px rgba(0, 133, 255, 0.95);
+}
+.largeBubble {
+    height: 65px;
+    width: 65px;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #838FFF 0%, rgba(227, 230, 255, 0) 100%), #030092;
+    box-shadow: 0px 40px 80px rgba(35, 0, 248, 0.53), inset 0px 2px 10px rgba(255, 255, 255, 0.58), inset 0px -20px 50px rgba(124, 161, 255, 0.37), inset 10px 16px 20px rgba(130, 5, 255, 0.95);
+}
+.bubble h5 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+}
+.bubble h4 {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.44px;
+}
+
+.bubble_details {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    bottom: 10%;
+}
+
+.bubble_details > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubble_details > div > div {
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(108, 73, 172, 0.07), 0px 41.7776px 33.4221px rgba(108, 73, 172, 0.0503198), 0px 22.3363px 17.869px rgba(108, 73, 172, 0.0417275), 0px 12.5216px 10.0172px rgba(108, 73, 172, 0.035), 0px 6.6501px 5.32008px rgba(108, 73, 172, 0.0282725), 0px 2.76726px 2.21381px rgba(108, 73, 172, 0.0196802);
+    border-radius: 8px;
+    margin-bottom: 8px;;
+    display: grid;
+    place-content: center;
+}
+
+.bubble_details p {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #383874;
+}
+
+.bubble_details h1 {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: -1.5px;
+    color: #383874;
+    margin-top: -10px;
+}
+
+.bubble_details span {
+    color: #023AFF;
+}
+
+.bubble_functionality {
+    position: absolute;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bubble_functionality > div {
+    background: #FFFFFF;
+    box-shadow: 0px 100px 80px rgba(108, 73, 172, 0.07), 0px 41.7776px 33.4221px rgba(108, 73, 172, 0.0503198), 0px 22.3363px 17.869px rgba(108, 73, 172, 0.0417275), 0px 12.5216px 10.0172px rgba(108, 73, 172, 0.035), 0px 6.6501px 5.32008px rgba(108, 73, 172, 0.0282725), 0px 2.76726px 2.21381px rgba(108, 73, 172, 0.0196802);
+    border-radius: 8px;
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.bubble_functionality svg {
+    height: 14px;
+    width: 14px;
+    cursor: pointer;
+}
+
+.timeline {
+    position: absolute;
+    top: 3%;
+    width: 30%;
+}
+.timeline > p {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #3D3D60;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.timeline > div {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 100px;
+    height: 35px;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeline > div p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.44px;
+    cursor: pointer;
+}
+
+.current_timeline {
+    background: #3247E6;
+    border-radius: 16px;
+    padding: 7px 0;
+    width: 53px;
+    color: #fff;
+    text-align: center;
+    
 }
