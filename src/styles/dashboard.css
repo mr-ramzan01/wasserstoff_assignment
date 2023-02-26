@@ -1,4 +1,4 @@
-.dashboard_div {
+.dashboard_div > div {
     display: flex;
     background-color: #fafafa;
 }
@@ -12,6 +12,7 @@
     width: 80%;
     background: #EEF1FA;
     border-radius: 73px 0px 0px 73px;
+    overflow: scroll;
 }
 
 .dash_info h1 {
@@ -35,29 +36,14 @@
 }
 
 .target {
-    border: 1px solid red;
-
-}
-
-.progress1 {
-    border: 4.5px solid #DBDFF1;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    display: grid;
-    place-content: center;
     position: relative;
 }
 
-.progress2 {
-    border: 4.5px solid #DBDFF1;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+.progress1 {
+    width: 120px;
+    height: 120px;
     display: grid;
     place-content: center;
-
-    
 }
 
 .progress3 {
@@ -87,18 +73,50 @@
 
 
 
-  .barProgress {
+.barProgressInner {
     position: absolute;
-    left: 11px;
-    top: 11px;
+    left: 10px;
+    top: 10px;
+}
+.barProgressOuter {
+    position: absolute;
+}
+
+.circle {
     width: 90px; height: 90px; 
-    border-radius: 50%;
-    box-sizing: border-box;
-    border: 8px solid transparent; 
-    border-bottom-color: rgba(255, 186, 105, 1);
-    border-right-color: rgba(255, 186, 105, 1);
+    stroke: #DBDFF1;
+    stroke-width: 5px;
+    fill: none;
+}
+
+.inner_circle_progress {
+    stroke-width: 7px;
+    stroke: #FFBA69;
+    fill: none;
     stroke-linecap: round;
-  }
+    stroke-dasharray: 100;
+}
+.circleOuter {
+    width: 120px; height: 120px; 
+    stroke: #DBDFF1;
+    stroke-width: 5px;
+    fill: none;
+}
+
+.outer_circle_progress1 {
+    stroke-width: 7px;
+    stroke: #8676FF;
+    fill: none;
+    stroke-linecap: round;
+    stroke-dasharray: 320;
+}
+.outer_circle_progress2 {
+    stroke-width: 7px;
+    stroke: #FF708B;
+    fill: none;
+    stroke-linecap: round;
+    stroke-dasharray: 250;
+}
 
 .diamondInner {
     position: absolute;
@@ -372,6 +390,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    width: 100%;
 }
 .outerBubble {
     width: 550px;
@@ -446,7 +465,7 @@
     top: 7%;
     left: 50%;
     color: #FFFFFF;
-    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #ca58ca 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
 }
 
@@ -462,7 +481,7 @@
     top: 40%;
     left: 73.5%;
     color: #FFFFFF;
-    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #ca58ca 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
 }
 
@@ -478,7 +497,7 @@
     top: 60%;
     left: 9%;
     color: #FFFFFF;
-    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #ca58ca 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
 }
 .developmentBubble {
@@ -493,7 +512,7 @@
     top: 22%;
     left: 7%;
     color: #FFFFFF;
-    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #ca58ca 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
 }
 
@@ -529,7 +548,7 @@
     left: 50%;
     top: 72%;
     border-radius: 50%;
-    background: radial-gradient(96% 96% at 70.4% 31.2%, #FFE3D3 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
+    background: radial-gradient(96% 96% at 70.4% 31.2%, #ca58ca 0%, rgba(179, 0, 183, 0) 100%), #C500F7;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.13), 60px 120px 80px rgba(255, 157, 203, 0.33), inset 0px 4px 30px rgba(255, 255, 255, 0.76), inset 0px -20px 50px rgba(255, 255, 255, 0.53), inset 10px 20px 100px #FF8777;
 }
 .mediumBubble2 {
@@ -656,7 +675,7 @@
     background: #FFFFFF;
     border-radius: 100px;
     height: 35px;
-    padding: 0 10px;
+    padding: 0 15px;
     justify-content: space-between;
     align-items: center;
 }
