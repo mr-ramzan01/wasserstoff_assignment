@@ -127,6 +127,7 @@
     stroke-width: 4px;
     stroke-dasharray: 207;
     stroke-dashoffset: calc(207 - (207 * 27) /100);
+    stroke-linecap: round;
 }
 .new_users_bar {
     stroke: #DBDFF1;
@@ -139,6 +140,7 @@
     stroke-width: 4px;
     stroke-dasharray: 207;
     stroke-dashoffset: calc(207 - (207 * 67) /100);
+    stroke-linecap: round;
 }
 
 .users h6 {
