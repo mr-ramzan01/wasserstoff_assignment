@@ -13,6 +13,7 @@ export const Dashboard = () => {
     const [zoom, setZoom] = useState(0);
     const navigate = useNavigate();
     const [dataTime, setDataTime] = useState('3months');
+    const [isLoading, setIsLoading] = useState(false);
 
     const ZoomIn = () => {
         if(zoom === 500) {
@@ -33,6 +34,7 @@ export const Dashboard = () => {
     },[dataTime]);
 
     const fetchData = () => {
+        setIsLoading(true);
         fetch(`https://dackend-data.onrender.com/${dataTime}`)
         .then(res => res.json())
         .then(res => {
@@ -46,6 +48,16 @@ export const Dashboard = () => {
             alert('something went wrong');
             navigate('/');
         })
+        .finally(() => {
+            setIsLoading(false);
+        })
+    }
+
+    if(isLoading) {
+        return <div className='loading'>
+            <div></div>
+            {/* <h1>Loading...</h1> */}
+        </div>
     }
 
   return (

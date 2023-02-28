@@ -1,3 +1,4 @@
+import { Map } from '../components/Map';
 import '../styles/overview.css';
 
 export const Overview = () => {
@@ -76,7 +77,9 @@ export const Overview = () => {
                     </div>
                 </div>
             </div>
-            <div className='overview_map'></div>
+            <div className='overview_map'>
+                <Map />
+            </div>
         </div>
     </div>
   )
