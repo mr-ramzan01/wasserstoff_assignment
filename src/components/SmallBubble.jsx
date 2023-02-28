@@ -1,7 +1,7 @@
-import '../styles/dashboard.css'
+import styles from '../styles/dashboard.module.css'
 
 export const SmallBubble = ({top, left}) => {
   return (
-    <div style={{top: top, left: left}} className='smallBubble'></div>
+    <div style={{top: top, left: left}} className={styles.smallBubble}></div>
   )
 }

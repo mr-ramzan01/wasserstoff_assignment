@@ -1,7 +1,7 @@
-import '../styles/dashboard.css'
+import styles from '../styles/dashboard.module.css'
 
 export const Downarrow = () => {
   return (
-    <div className='downarrow'></div>
+    <div className={styles.downarrow}></div>
   )
 }
