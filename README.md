@@ -1,70 +1,56 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Wasserstoff Frontend Assignment
 
-## Available Scripts
+An assignment related to mostly frontend with data visualization and integration in map, chart and bubbles.
 
-In the project directory, you can run:
+<img width="959" alt="wasser" src="https://user-images.githubusercontent.com/108893444/222056706-f3a2ae90-f1eb-4686-bcfe-26e857dd8fb1.png">
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+Used React.js, Module css, d3, and d3-hexbin to build.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Steps to run build
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To initiate the project run
+```
+npx create-react-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to the project directory
 
-### `npm run eject`
+```
+  cd my-project
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To run the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To build the project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm run build
+```
+## Video Explanation 
+## Deployment
 
-## Learn More
+Deployed on vercel and here is the deployed link
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://wasserstoff-assignment-azure.vercel.app
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Understanding the Approach
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I started with the smaller task first which has high reusability like the navbar and footer UI. After this, I completed the third page with bubble data visualization statically after that I convert it to dynamically integrated UI with all timeline as well as the zoom in and zoomout features.
 
-### Analyzing the Bundle Size
+And, for the map I tried first with normal map svg and succed in that but the issue was it was not built with the hexagons which was the main task so then I come to know about the h3-js, I explored but didn't come to result then I got to find that the image data can be used in canvas in a way that whenever we hover any part of the image then I got data related to that part only which I think will be useful.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+So, I tried a library d3.js which is actually a data driven visualization, I research a lot but not able to fully incorporate what I thought,which was mapping the data image and converting pixelated form into hexagon.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+During the assignment I learned a lot of libraries that I never explore before and the data visualization through d3.js which is very vast.
